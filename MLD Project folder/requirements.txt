@@ -1,6 +1,0 @@
-Flask
-gunicorn
-matplotlib
-numpy
-textblob
-tweepy

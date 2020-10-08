@@ -39,13 +39,13 @@ def predict():
     '''
         Obtain your Credentials from Your Twitter's developer account and assign to them to the variables
     '''
-    consumerKey="**************"
-    consumerSecret="********************"
-    accessToken="**************************"
-    accessTokenSecret="********************************"
+    consumerKey="c4cK1xqfC3MocKF4gPwE0vHFH"
+    consumerSecret="s6T5kM503GQ49mE2ZRNNUtz7VRTNCqHsox1gVOPRFmSv5CHwSV"
+    accessToken="1244402689175420929-BilxLAuVQotLB4HMAWuECgnuCQewmY"
+    accessTokenSecret="sm8ygnOT7Xzjb2iaZL95yR5oPWpJQKIwu7PNgBs8BOnRJ"
 
     '''
-        Obtain authorization access to twitter's api by writing the folowing code
+        Obtain authorization access to twitter's api by writing the following code
     '''
     auth =tweepy.OAuthHandler(consumer_key=consumerKey, consumer_secret=consumerSecret)
     auth.set_access_token(accessToken, accessTokenSecret)
@@ -76,7 +76,7 @@ def predict():
     positive=percentage(positive, noOfSearchTerms)
     negative=percentage(negative, noOfSearchTerms)
     neutral=percentage(neutral, noOfSearchTerms)
-    polarity=percentage(polarity,noOfSearchTerms)
+    polarity=percentage(polarity, noOfSearchTerms)
 
     positive=format(positive,'0.2f')
     negative=format(negative,'0.2f')
